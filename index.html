@@ -6,11 +6,16 @@
     <meta name="description" content="Personal HTML profile page with headings, lists, images, tables, forms, and links">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single+Ink:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1 >Vikas Sharma</h1>
-<h2>Aspiring developer</h2>
+<div><h1 >Vikas Sharma</h1></div>
+<div><h2>Aspiring developer</h2>
 <p><b>Hi everyone, I code,learn and chill. I play basketball,listen to music. i started to code in the 8th grade with html and have now started to be proficient in python, webdevelopment and also database management. Now starting my journey towards my dreams of being a developer at NST banglore pursuing my bachelors in computer science engineering.</b></p>
+</div>
+<h3>i study here as a <span>student</span></h3>
 <head>
     <style>
         h1{
@@ -19,7 +24,7 @@
             font-size: 100px;
             font-style: italic;
             background-color: red;
-            border-radius: 500px;
+            border-radius: 1500px;
             border-style:double;
             border-width: 10px;
         }
@@ -29,7 +34,7 @@
             font-size: 50px;
             font-style: italic;
             background-color: yellow;
-            border-radius: 500px;
+            border-radius: 700px;
             border-style: double;
             border-width: 10px;
         }
@@ -48,7 +53,31 @@
             padding-top: 50px;
             padding-bottom: 50px;
         }
+        button{
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color:black;
+            color: white;
+            border: double;
+            border-radius: 20px;
+            cursor: pointer;
+            border-color: white;
+            border-width:20px
+        }
+        span{
+            color:orange;
+            font-family: "Bitcount Prop Single Ink", system-ui;
+            font-weight: 900;
+            font-size: 200px;
+        }
+        h3{
+            font-size: 70px;
+                }
     </style>
 </head>
+<button onclick="document.body.style.backgroundColor = 'blue';">Change Background Color</button>
+<button onclick="document.body.style.backgroundColor = 'white';">Change to previous Color</button>
 </body>
 </html>
