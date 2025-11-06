@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newton College – Student Admission Portal</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f7f9fc;
+      font-family: Arial, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    h2 {
+      text-decoration: underline;
+    }
+    img {
+      display: block;
+      margin: 20px auto;
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+    }
+    p {
+      text-align: center;
+      margin: 10px 20px;
+      font-size: 16px;
+    }
+    form {
+      border: 2px solid gray;
+      width: 400px;
+      background-color: white;
+      padding: 20px;
+      margin: 30px auto;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    select,
+    textarea,
+    input[type="file"] {
+      width: 100%;
+      height: 35px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    textarea {
+      height: 80px;
+    }
+
+    .gender {
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #2B6CB0;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #1e4f8a;
+    }
+    footer {
+      text-align: center;
+      font-size: 12px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    hr {
+      width: 80%;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Newton College – Student Admission Portal</h1>
+
+
+  <h2>Welcome to the Online Admission Form</h2>
+
+
+  <img src="https://imgs.search.brave.com/l6xizbA2opWmKzdc4SJvMoBgIGrWTFQph7Q9mCBUzMU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Y29sbGVnZWJhdGNo/LmNvbS9zdGF0aWMv/Y2xnLWdhbGxlcnkv/bmV3dG9uLXNjaG9v/bC1vZi10ZWNobm9s/b2d5LXNvbmlwYXQt/Mjg5NzY2LmpwZw" alt="College Building">
+
+  <p>Please fill in your details accurately to apply for admission to your preferred course.</p>
+
+  <hr>
+
+
+  <form action="#" method="post">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="contact">Contact Number:</label>
+    <input type="number" id="contact" name="contact" required>
+
+    <label>Gender:</label>
+    <div class="gender">
+      <input type="radio" id="male" name="gender" value="Male">
+      <label for="male" style="display:inline;">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female" style="display:inline;">Female</label>
+    </div>
+
+    <label for="course">Select Course:</label>
+    <select id="course" name="course">
+      <option value="bca">BCA</option>
+      <option value="bba">BBA</option>
+      <option value="bsc">B.Sc</option>
+    </select>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" rows="4" required></textarea>
+
+    <label for="photo">Upload Photo:</label>
+    <input type="file" id="photo" name="photo">
+
+    <input type="submit" value="Submit Application">
+  </form>
+
+  <footer>
+    © 2025 Newton College. All rights reserved.
+  </footer>
+</body>
+</html>
